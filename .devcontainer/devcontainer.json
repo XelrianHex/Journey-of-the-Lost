@@ -1,0 +1,21 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+    "node": "latest",
+    "git": "latest"
+  },
+  "postCreateCommand": "npm install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "bradlc.vscode-tailwindcss",
+        "msjsdiag.debugger-for-chrome",
+        "dsznajder.es7-react-js-snippets",
+        "christian-kohler.path-intellisense",
+        "ms-vscode.vscode-typescript-next"
+      ]
+    }
+  }
+}
