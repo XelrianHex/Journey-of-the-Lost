@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import React from "react";
+import {wrapper} from "../store/store"
+import { Provider } from "react-redux";
 import "../styles/globals.css";
 
 export const metadata: Metadata = {
@@ -12,10 +14,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const { store } = wrapper.useWrappedStore({children});
   return (
     <html lang="en">
       <body>
-        {children}
+        <Provider store={store}>{props.children}</Provider>
       </body>
     </html>
   );
