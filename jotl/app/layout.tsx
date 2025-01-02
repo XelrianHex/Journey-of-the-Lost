@@ -1,21 +1,23 @@
-import type { Metadata } from "next";
+'use client';
 import React from "react";
 import "../styles/globals.css";
-
-export const metadata: Metadata = {
-  title: "Journey of the Lost",
-  description: "A text based adventure rpg",
-};
+import ReduxProvider from './redux-provider';
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
+      <head>
+        <title>Journey of the Lost</title>
+        <meta name="description" content="A text based adventure rpg" />
+      </head>
       <body>
-        {children}
+        <ReduxProvider>
+          {children}
+        </ReduxProvider>
       </body>
     </html>
   );
