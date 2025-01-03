@@ -9,11 +9,12 @@ import { RootState } from "@/store/store";
 const Game = () => {
   const headerState = useSelector((state: RootState) => state.header);
   const displayState = useSelector((state: RootState) => state.display);
+  const combatState = useSelector((state: RootState) => state.combat);
   return (
     <>
       <Header headerState={headerState}/>
       <div className="layout flex h-[calc(100vh-100px)] bg-dark">
-        <Display displayState={displayState}/>
+        <Display displayState={displayState} combatState={combatState}/>
       </div>
     </>
   );
