@@ -79,7 +79,7 @@ const initialState: GameState = {
   },
   monster: {
     monsterName: "Monster",
-    monsterHp: 10,
+    monsterHp: 100,
     monsterLvl: 1,
   },
   monsterAbilities: {
