@@ -1,3 +1,5 @@
+import {Items} from './items';
+import {Locations} from './locations';
 
 export interface Stats {
     name: string;
@@ -14,5 +16,6 @@ export interface Stats {
     xp: number;
     gp: number;
     facing: string;
-    inventory: string[];
+    inventory: Items[];
+    location: Locations;
 }
