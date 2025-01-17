@@ -19,3 +19,5 @@ export interface Stats {
     inventory: Items[];
     location: Locations;
 }
+
+export type Abilities = Pick<Stats, 'strength' | 'dexterity' | 'constitution' | 'intelligence' | 'wisdom' | 'charisma'>;
