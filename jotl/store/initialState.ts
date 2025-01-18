@@ -1,10 +1,8 @@
-import { buttonNames } from "@/data/button-names";
-
 export enum Facing {
   North = "North",
   East = "East",
   South = "South",
-  West = "West"
+  West = "West",
 }
 
 export interface PlayerState {
@@ -98,7 +96,7 @@ const initialState: GameState = {
     title: "Journey of the Lost",
     chapter: "Chapter One",
     chapterTitle: "~The Beginning or the End?~",
-    buttons: buttonNames.controls,
+    buttons: [],
     text: "You find your self waking up in a small field surrounded by trees. Strange looking trees...are, are those leaves blue?!?!",
   },
 };

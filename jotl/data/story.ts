@@ -20,6 +20,7 @@ const commonOptions: Options[] = [
     {text: "Skill", nextNodeId: 9}
 ]
 
+
 const story: Record<number, ChapterOne> = {
     1: {
         text: "You find yourself waking up in a small field surrounded by trees. Strange looking trees...are, are those leaves blue?!?!",
